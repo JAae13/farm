@@ -115,18 +115,26 @@ div{
     border: solid 1px var(--White);
 }
 
-#fruit-images {
-    text-align: center;
-}
-
-#veggie-images {
-    text-align: center;
-}
-
 #Info {
     text-align: center;
     background-color: var(--Green);
     color: var(--White);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--White);
+    background-color: var(--Black);
+    width: 160px;
+    padding: 1em 0;
 }
 
 footer {
