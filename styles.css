@@ -94,7 +94,6 @@ nav li {
     list-style-type: none;
 }
 nav a {
-    display: block;
     text-decoration: none;
     text-align: center;
     background-color: var(--Orange);
@@ -139,12 +138,24 @@ footer {
 
 /* GLOBAL STYLES (mobile first/small) */
 @media screen and (min-width: 428px) {
-
+    nav {
+        margin: 2em 4em;
+    }
+    nav a {
+        display: block;
+        margin: 1em;
+    }
 }
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 834px) {
-    
-}
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+    nav{
+        margin: 0.5em;
+    }
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 1280px) {
     
