@@ -138,6 +138,18 @@ footer {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+@media screen and (min-width: 428px) {
+
+}
 /* MEDIA QUERY (medium) */
+@media screen and (min-width: 834px) {
+    
+}
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 1280px) {
+    
+}
 /* MEDIA QUERY (xl) */
+@media screen and (min-width: 1440px) {
+    
+}
