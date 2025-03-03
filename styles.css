@@ -110,7 +110,7 @@ div{
 [href="#top"] {
     position: fixed;
     margin: 0;
-    right: 0px;
+    right: 0;
     bottom: 20px;
     border-radius:2px;
     border: solid 1px var(--White);
