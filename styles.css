@@ -61,7 +61,6 @@ h1 {
     font-size: 2.5em;
     font-family: Irish Grover;
     padding: 0.5em;
-    text-align: center;
     text-shadow: 2px 2px 2px black;
 }
 h2 {
@@ -73,6 +72,7 @@ h3 {
     font-size: 1.25em;
     font-family: Irish Grover;
     margin: 0.5em 0;
+    text-align: center;
 }
 p{
     font-size: 1.25em;
@@ -84,7 +84,6 @@ header {
 }
 header p {
     background-color: var(--Green);
-    text-align: center;
     padding-bottom: 0.5em;
 }
 nav {
@@ -100,6 +99,7 @@ nav a {
     font-family: Habibi;
     color: var(--White);
     padding: 0.5em;
+    border: solid 1px var(--White);
 }
 
 div{
@@ -113,6 +113,7 @@ div{
     bottom: 20px;
     border-radius:2px;
     border: solid 1px var(--White);
+    z-index: 1;
 }
 
 #Info {
@@ -151,8 +152,11 @@ footer {
 
 /* GLOBAL STYLES (mobile first/small) */
 @media screen and (min-width: 428px) {
+    header {
+        text-align: center;
+    }
     nav {
-        margin: 2em 4em;
+        margin: 0 4em 1em 4em;
     }
     nav a {
         display: block;
@@ -161,6 +165,17 @@ footer {
 }
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 834px) {
+    header {
+        text-align: left;
+    }
+    #header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0;
+        background-color: var(--Green);
+    }
+
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -169,11 +184,48 @@ footer {
     nav{
         margin: 0.5em;
     }
+
+    #fruit-images, #veggie-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        margin-bottom: 2em;
+    }
+
+    #Info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 1280px) {
-    
+    h1 {
+        padding-left: 0;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--Green);
+        padding: 0.5em;
+    }
+    #header {
+        display: block;
+    }
+    #fruit-images, #veggie-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #Contact, #Hours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+    }
 }
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1440px) {
-    
+    #fruit-images, #veggie-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
