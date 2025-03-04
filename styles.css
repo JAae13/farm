@@ -103,7 +103,7 @@ nav a {
     border: solid 1px var(--White);
 }
 
-div{
+div, #Fruits, #Vegetables{
     padding: 0.5em;
 }
 
